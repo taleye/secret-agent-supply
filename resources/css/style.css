@@ -1,12 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: solid 1px black;
-}
 
 html {
   font-size: 18px;
   font-family: Helvetica;
+  color: white;
 }
 
 .container {
@@ -18,7 +14,10 @@ html {
 .flex {
   display: flex;
   flex-wrap: wrap;
-  /*  align-items: center; */
+}
+
+.center {
+  align-items: center;
 }
 
 .flex-col {
@@ -28,7 +27,6 @@ html {
 header {
   background-color: black;
   font-size: 1rem;
-  color: white;
   height: 2.32rem;
 }
 
@@ -53,7 +51,6 @@ header img {
   margin-top: 9rem;
   padding: 2rem 3rem;
   background-color: black;
-  color: white;
   width: 20rem;
 }
 
@@ -66,4 +63,78 @@ header img {
 h1 {
   font-size: 2rem;
   font-weight: bold;
+}
+
+nav {
+  background-color: firebrick;
+  display: block;
+}
+
+nav .container {
+  justify-content: space-between;
+  padding: 0.75rem 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.products .container {
+  justify-content: space-between;
+  text-align: center;
+  padding: 3rem 0;
+  flex-wrap: wrap;
+}
+
+.product-container {
+  border: solid 4px black;
+  width: 30%;
+}
+
+.image {
+  height: 9rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  max-width: 8rem;
+}
+
+.title {
+  padding: .5rem 0;
+  background-color: black;
+}
+
+.store-details .container {
+  justify-content: space-between;
+}
+
+.details-container {
+  width: 35%;
+  margin-bottom: 4rem;
+}
+
+.details {
+  padding: 1rem 2rem;
+}
+
+.details-info {
+  color: black;
+  padding: .25rem 0;
+}
+
+footer {
+  background-color: black;
+}
+
+footer .flex {
+  align-items: center;
+}
+
+footer span {
+  padding: 4rem 0;
 }
