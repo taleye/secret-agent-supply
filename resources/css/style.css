@@ -5,7 +5,7 @@ html {
 }
 
 .container {
-  width: 960px;
+  max-width: 960px;
   margin: 0 auto;
   height: 100%;
 }
@@ -146,6 +146,15 @@ footer span {
 }
 
 @media only screen and (max-width: 1024px) {
+  .hero span {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+
   .large {
     display: none;
   }
@@ -162,4 +171,51 @@ footer span {
   .glasses {
     display: none;
   }
+}
+
+@media only screen and (max-width: 470px) {
+
+  .container {
+    width: 100%;
+  }
+
+  .hero {
+    height: 15rem;
+    font-weight: bold;
+  }
+
+  .hero span {
+    font-size: 0.77rem;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .hero-content {
+    margin-top: 10rem;
+    padding: 1rem 2rem;
+    width: 100%;
+  }
+
+  .product-container,
+  .details-container {
+    width: 90%;
+  }
+
+  .watch,
+  .glasses {
+    display: none;
+  }
+
+  .location.details-container {
+    margin-bottom: .5rem;
+  }
+
+  .products .container,
+  .store-details .container,
+  footer .container {
+    justify-content: center;
+  }
+
 }
